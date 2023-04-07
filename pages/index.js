@@ -1,5 +1,6 @@
 import Sidebar from '../components/sidebar';
-import styles from '../styles/sidebar.module.css';
+
+import styles from '@/styles/sidebar.module.css';
 
 const MyPage = () => {
   return (
