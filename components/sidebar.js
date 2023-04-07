@@ -3,21 +3,23 @@ import styles from '@/styles/sidebar.module.css';
 
 const Sidebar = () => {
   return (
-    <div className={styles.container}>
-      <img src="/logo.png" alt="Logo" className="sidebar__logo" />
-      <nav className="sidebar__nav">
-        <ul>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/contact">Contact</Link>
-          </li>
-        </ul>
-      </nav>
+    <div className="sidebar-container">
+      <div className={styles.sidebar}>
+        <img src="/logo.png" alt="Logo" className={styles.sidebar__logo} />
+        <nav className={styles.sidebar__nav}>
+          <ul>
+            <li>
+              <Link href="/">Dashboard</Link>
+            </li>
+            <li>
+              <Link href="/sent">Sent</Link>
+            </li>
+            <li>
+              <Link href="/spam">Spam</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   );
 };
