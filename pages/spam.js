@@ -1,6 +1,7 @@
 import Topbar from '@/components/topbar';
 import Sidebar from '../components/sidebar';
 import styles from '@/styles/main.module.css';
+import Email from '@/components/email';
 
 const Spam = () => {
   return (
@@ -8,9 +9,17 @@ const Spam = () => {
       <Topbar />
       <Sidebar />
 
-      <main className={styles.content}>
-        {/* Your page content goes here */}
-      </main>
+      <div className={styles.container}>
+        <Email />
+        <Email />
+        <Email />
+        <Email />
+        <Email />
+        <Email />
+        <Email />
+        <Email />
+        <Email />
+      </div>
     </div>
   );
 };
