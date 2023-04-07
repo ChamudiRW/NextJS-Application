@@ -1,10 +1,13 @@
-import Sidebar from '@/components/sidebar';
-import styles from '@/styles/Home.module.css';
+import Sidebar from '../components/sidebar';
+import styles from '../styles/sidebar.module.css';
 
-export default function Home() {
+const MyPage = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <Sidebar />
+      <main className={styles.main}>{/* Your page content goes here */}</main>
     </div>
   );
-}
+};
+
+export default MyPage;
