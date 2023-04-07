@@ -1,14 +1,16 @@
 import Topbar from '@/components/topbar';
 import Sidebar from '../components/sidebar';
+import Containers from '@/components/containers';
 
-const MyPage = () => {
+const Dashboard = () => {
+  console.log('Dashboard component rendered!');
   return (
     <div>
       <Topbar />
       <Sidebar />
-      <main>{/* Your page content goes here */}</main>
+      <Containers />
     </div>
   );
 };
 
-export default MyPage;
+export default Dashboard;
