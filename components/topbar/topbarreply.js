@@ -1,14 +1,23 @@
 import styles from '@/styles/topbar.module.css';
 
+const handleLogout = () => {
+  const confirmLogout = window.confirm('Are you sure you want to log out?');
+  if (confirmLogout) {
+    // logout logic goes here
+  }
+};
+
 const Topbar = () => {
   return (
     <div className={styles.topbar}>
       <div></div>
-      <h1>Compose Emails</h1>
+      <h1>Compose Email</h1>
       <div className={styles.topbar__text}>
         <a href="#" className="text-danger">
           <h3>John Doe</h3>
-          <button className={styles.logout}>LogOut</button>
+          <button className={styles.logout} onClick={handleLogout}>
+            LogOut
+          </button>
         </a>
         &emsp;
         <img

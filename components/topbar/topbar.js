@@ -1,5 +1,12 @@
 import styles from '@/styles/topbar.module.css';
 
+const handleLogout = () => {
+  const confirmLogout = window.confirm('Are you sure you want to log out?');
+  if (confirmLogout) {
+    // logout logic goes here
+  }
+};
+
 const Topbar = () => {
   return (
     <div className={styles.topbar}>
@@ -8,7 +15,9 @@ const Topbar = () => {
       <div className={styles.topbar__text}>
         <a href="#" className="text-danger">
           <h3>John Doe</h3>
-          <button className={styles.logout}>LogOut</button>
+          <button className={styles.logout} onClick={handleLogout}>
+            LogOut
+          </button>
         </a>
         &emsp;
         <img
