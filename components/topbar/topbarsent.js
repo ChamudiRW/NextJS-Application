@@ -4,6 +4,7 @@ const Topbar = () => {
   return (
     <div className={styles.topbar}>
       <div></div>
+      <h1>Sent Emails</h1>
       <div className={styles.topbar__text}>
         <a href="#" className="text-danger">
           <h3>John Doe</h3>

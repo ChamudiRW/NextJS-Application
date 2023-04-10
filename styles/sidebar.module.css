@@ -52,6 +52,7 @@
   transition: background-color 0.3s ease;
 }
 
+.sidebar__nav a.active,
 .sidebar__nav a:hover {
   background-color: white;
   color: #626262;
