@@ -1,4 +1,5 @@
 import styles from '@/styles/email.module.css';
+import Link from 'next/link';
 
 const Email = () => {
   return (
@@ -16,8 +17,10 @@ const Email = () => {
           </button>
         </div>
         <div>
+          <Link href="/view">
+            <button className={styles.button}>View</button>
+          </Link>
           <button className={styles.button}>Restore</button>
-          <button className={styles.button}>Spam</button>
         </div>
       </div>
     </div>
