@@ -2,25 +2,24 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top: 80px;
+  margin-top: 60px;
   margin-left: 200px;
 }
 
 .box {
-  width: 1050px;
-  height: 50px;
+  width: 1000px;
+  height: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
+  padding: 50px;
   color: #626262;
-  font-size: 20px;
-  font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #e9e9e9;
-  border-bottom: 3px solid white;
 }
 .attachment {
+  margin-left: 5px;
   background-color: #ffffff;
   color: #626262;
   font-size: 14px;
@@ -29,21 +28,19 @@
   border-radius: 4px;
   font-size: 14px;
   padding: 4px 10px;
-  margin-left: 16px;
-  border-radius: 5px;
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 5px;
+  grid-template-columns: repeat(20, 1fr);
+  gap: 1px;
 }
 .button {
   font-size: 14px;
   padding: 4px 10px;
   background-color: #dc3545;
   border: none;
-  margin-left: 16px;
   border-radius: 5px;
+  margin-left: 5px;
 }
 .button:hover {
   cursor: pointer;

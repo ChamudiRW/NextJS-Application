@@ -37,3 +37,12 @@
   margin-left: 16px;
   border-radius: 5px;
 }
+
+.button:hover {
+  cursor: pointer;
+  background-color: #c82333;
+}
+
+.button:active {
+  background-color: #bd2130;
+}
